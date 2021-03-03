@@ -1,4 +1,4 @@
-# Odoo-Installation-for-Developing
+# Odoo Installation for Developing
 
  Installing Odoo system dependencies:-
   - sudo apt update
@@ -24,7 +24,7 @@
   - ./odoo-bin --config=<odoo.conf path>  --http-port = <new port>
  
  Initializing a new Odoo database:-
-  - sudo su -c "createuser -s $USER" postgres <b>Create db superuser</b>
+  - sudo su -c "createuser -s $USER" postgres <b>#Create db superuser</b>
   - ./odoo-bin -d testdb
   - createdb MyDB
   - createdb --template = MyDB MyDB2
@@ -34,8 +34,17 @@
 
 
 # PostgreSQL-Installation
-  -  
+  - sudo apt update
+  - sudo apt install postgresql postgresql-contrib
+  - sudo -i -u postgres
+  - psql
+  - CREATE ROLE superuser WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD '1234';
+  - \du
+  - \d 
   
 # PgAdmin4-Installation
-
+  - sudo apt update 
+  - sudo apt install pgadmin4 pgadmin4-apache2
+  - sudo ufw allow http
+    sudo ufw allow https
 
