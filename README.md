@@ -17,14 +17,14 @@
   - pip3 install -r ~/odoo_dev/odoo/requirements.txt
   - pip3 install num2words phonenumbers psycopg2-binary watchdog xlwt
   
- Start the Odoo server instance:-
+ Start teh Odoo server instance:-
   - cd odoo_dev/odoo
   - ./odoo-bin 
   - ./odoo-bin -h
   - ./odoo-bin --config=<odoo.conf path>  --http-port = <new port>
  
  Initializing a new Odoo database:-
-  - sudo su -c "createuser -s $USER" postgres #Create db superuser
+  - sudo su -c "createuser -s $USER" postgres <b>Create db superuser</b>
   - ./odoo-bin -d testdb
   - createdb MyDB
   - createdb --template = MyDB MyDB2
