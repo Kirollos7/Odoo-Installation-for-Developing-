@@ -33,7 +33,7 @@
   
 
 
-# PostgreSQL-Installation
+# PostgreSQL Installation <img src='https://www.aalpha.net/wp-content/uploads/2019/05/postgre-database-development-india.png'>
   - sudo apt update
   - sudo apt list postgresql*
   - sudo apt list postgresql
@@ -49,7 +49,7 @@
   - \du
   - \d 
   
-# PgAdmin4-Installation
+# PgAdmin4 Installation
   - sudo apt update 
   - sudo nano /etc/apt/sources.list.d/pgdg.list
   - deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main
