@@ -35,16 +35,27 @@
 
 # PostgreSQL-Installation
   - sudo apt update
-  - sudo apt install postgresql postgresql-contrib
-  - sudo -i -u postgres
-  - psql
+  - sudo apt list postgresql*
+  - sudo apt list postgresql
+  - sudo systemctl stop postgresql
+  - sudo systemctl disable postgresql
+  - sudo systemctl start postgresql
+  - sudo systemctl enable postgresql
+  - sudo systemctl status postgresql
+  -  sudo -me -u postgres
+  -  psql
+  -  \l
   - CREATE ROLE superuser WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD '1234';
   - \du
   - \d 
   
 # PgAdmin4-Installation
   - sudo apt update 
+  - sudo nano /etc/apt/sources.list.d/pgdg.list
+  - deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main
+  - wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+  - sudo apt-get update
   - sudo apt install pgadmin4 pgadmin4-apache2
-  - sudo ufw allow http
-    sudo ufw allow https
-
+  - sudo a2enmod rewrite
+  - sudo systemctl restart apache2
+  
