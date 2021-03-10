@@ -13,7 +13,7 @@
  Installing Odoo from source:-
   - mkdir odoo_dev
   - cd odoo_dev
-  - git clone https://github.com/odoo/odoo.git -b 12.0 --depth=1
+  - git clone https://github.com/odoo/odoo.git -b 14.0 --depth=1
   - pip3 install -r ~/odoo_dev/odoo/requirements.txt
   - pip3 install num2words phonenumbers psycopg2-binary watchdog xlwt
   
