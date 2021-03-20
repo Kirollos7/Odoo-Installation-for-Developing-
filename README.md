@@ -49,6 +49,9 @@
   - \du
   - \d 
   
+ # Delete Database  
+  - psql -U username -h localhost -d postgres -c "DROP DATABASE  <db name>;"
+
 # PgAdmin4 Installation <img src="https://www.ktexperts.com/wp-content/uploads/2019/07/pgadmin4.png" alt="PgAdmin4" height="40" style="vertical-align:top; margin:4px">
 
   - sudo apt update 
