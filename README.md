@@ -42,13 +42,17 @@
   - sudo systemctl start postgresql
   - sudo systemctl enable postgresql
   - sudo systemctl status postgresql
-  -  sudo -me -u postgres
+  - --------------------------------------------
+  -  sudo -i -u postgres
   -  psql
   -  \l
   - CREATE ROLE superuser WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD '1234';
   - \du
-  - \d 
-  
+  - \l <list of databases>
+  - \c <database name> # Connect Database
+  - \q <exit from anything>
+  -\d or \dt+ <Show all tables in database>
+ 
  # Delete Database  
   - psql -U username -h localhost -d postgres -c "DROP DATABASE  <db name>;"
 
