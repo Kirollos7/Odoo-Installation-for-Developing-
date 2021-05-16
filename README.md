@@ -49,7 +49,7 @@
   - CREATE ROLE superuser WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD '1234';
   - \du
   - \l <list of databases>
-  - \c <database name> # Connect Database
+  - \c <database name>  ## Connect Database
   - \q <exit from anything>
   -\d or \dt+ <Show all tables in database>
  
