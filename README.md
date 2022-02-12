@@ -43,6 +43,8 @@
   - sudo systemctl enable postgresql
   - sudo systemctl status postgresql
   - --------------------------------------------
+ ## CREATE USER:
+ https://kb.objectrocket.com/postgresql/how-to-create-a-role-in-postgres-1454#:~:text=To%20create%20a%20role%20in%20Postgres%2C%20use%20the%20CREATE%20ROLE,by%20the%20new%20role%20name.&text=CREATE%20ROLE%20new_role%3B,CREATE%20ROLE%20statement%20in%20PostgreSQL.&text=The%20only%20information%20we%20see,it%20has%20no%20login%20privileges.
   -  sudo -i -u postgres
   -  psql
   -  \l
